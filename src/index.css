@@ -1,0 +1,88 @@
+:root {
+  --nav-color:#2C3E50;
+  --dark-color:#1A252F;
+  --main-color:#1ABC9C;
+}
+::after ,::before {
+  content: '';
+}
+.navbar,footer {
+  background-color: var(--nav-color); 
+}
+.dark {
+  background-color:var(--dark-color);
+}
+.second-color {
+  color: #2C3E50;
+}
+.main {
+  background-color: var(--main-color);
+}
+.app {
+  min-height: 90vh;
+}
+.heading-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+.icon {
+  position: relative;
+}
+.icon::after {
+  position: absolute;
+  top: 40%;
+  left: 56%;
+  height: 4px;
+  width: 20%;
+  background-color: #fff;
+}
+.icon::before {
+  position: absolute;
+  top: 40%;
+  right: 56%;
+  height: 4px;
+  width: 20%;
+  background-color: #fff;
+}
+.icon-dark {
+  position: relative;
+}
+.icon-dark::after {
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  height: 4px;
+  width: 5%;
+  background-color: var(--nav-color);
+}
+.icon-dark::before {
+  position: absolute;
+  top: 40%;
+  right: 52%;
+  height: 4px;
+  width: 5%;
+  background-color: var(--nav-color);
+}
+.portfolio-item {
+  cursor: pointer;
+  position: relative;
+}
+.layer {
+  
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  background-color: #1ABC9C;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.portfolio-item:hover .layer {
+  opacity: 0.9;
+
+}
+.fa-plus {
+  font-size: 70px;
+  font-weight: bold;
+}
